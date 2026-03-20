@@ -36,7 +36,7 @@ class EngineeringAgent:
         )
 
     def generate_code(self, spec):
-        prompt = f"Write clean, minimal code for the following requirement:\n\n{spec}\n\nReturn ONLY code."
+        prompt = f"Write clean, minimal python code for the following requirement:\n\n{spec}\n\nReturn ONLY code."
         result = self.agent.run(prompt)
         return result
 
